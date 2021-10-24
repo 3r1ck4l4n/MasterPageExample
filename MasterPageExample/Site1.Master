@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPageExample.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <ul>
+                <li><asp:LinkButton runat="server" id="link1"  Text="Enlace 1" OnClick="link1_Click"> </asp:LinkButton> </li>
+                <li><asp:LinkButton runat="server" id="link2" Text="Enlace 2" OnClick="link2_Click"> </asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" id="link3" Text="Enlace 3"> </asp:LinkButton></li>
+            </ul>
+        </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       
+    </form>
+</body>
+</html>
